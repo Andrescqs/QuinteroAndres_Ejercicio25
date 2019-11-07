@@ -39,7 +39,7 @@ int main(){
 void relleno(int l,float **m){
     for(int i = 0; i < l+2; i++){
         for(int j=0; j<l; j++){
-            m[i][j]=i+j;
+            m[j][i]=i+j;
         }
     }
 }
@@ -54,6 +54,7 @@ void imprimecabezas(int l,float **m){
 
         sum+=m[i][0];
     }
+    cout<< sum <<" " <<endl;
 }
 
 
